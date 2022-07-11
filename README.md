@@ -29,13 +29,15 @@ desejado.
 
 ## Funcionalidades
 
-- `Cadastrar um filme`: (&#39;/movies&#39;, método POST)
-- `Cadastrar um espectador`: (&#39;/viewer&#39;, método POST)
-- `Consultar filmes cadastrados`: (&#39;/movies&#39;, método GET)
-- `Consultar espectadores cadastrados`: (&#39;/viewer&#39;, método GET)
-- `Definir filme assistido por um espectador`: (&#39;/- watched&#39;, método POST)
-- `Consultar quantos filmes um espectador assistiu`: (&#39;/history&#39;, método POST)
-- `Consultar quantos espectadores um filme tem`: (&#39;/views&#39;, método POST)
+O final da URL é modificado de acordo com a requisição que será feita.
+
+- `Cadastrar um filme`: /movie, método POST
+- `Cadastrar um espectador`: /viewer, método POST
+- `Consultar filmes cadastrados`: /movies, método GET
+- `Consultar espectadores cadastrados`: /viewer, método GET
+- `Definir filme assistido por um espectador`: /watched, método POST
+- `Consultar quantos filmes um espectador assistiu`: /history, método POST
+- `Consultar quantos espectadores um filme tem`: /views, método POST
 
 ## Documentação
 
