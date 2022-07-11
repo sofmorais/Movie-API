@@ -13,13 +13,8 @@ O banco de dados foi construído com [SQLite3](https://www.sqlite.org/index.html
 
 ## Como testar
 
-Para fazer os testes será preciso uma ferramenta de teste, pois a aplicação não conta com
-código pra execução das requisições nem interface visual, então não é possível realizar todas
-as requisições. As requisições de GET podem ser visualizadas no [Heroku](https://nodejs-
-express-movie-api3.herokuapp.com/).
-Eu utilizei o [Postman](https://www.postman.com/downloads/), uma ferramenta que facilita a
-criação, teste e documentação de APis, pode ser feito o download ou usar a versão
-[online](https://web.postman.co/).
+Para fazer os testes será preciso uma ferramenta de teste, pois a aplicação não conta com código pra execução das requisições nem interface visual, então não é possível realizar todasas requisições. As requisições de GET podem ser visualizadas no [Heroku](https://nodejs-express-movie-api3.herokuapp.com/).  
+Eu utilizei o [Postman](https://www.postman.com/downloads/), uma ferramenta que facilita a criação, teste e documentação de APis, pode ser feito o download ou usar a versão [online](https://web.postman.co/).
 
 - Clone o repositório;
 - Inicie o terminal com o endereço da pasta;
@@ -43,16 +38,8 @@ desejado.
 - `Consultar quantos espectadores um filme tem`: (&#39;/views&#39;, método POST)
 
 ## Documentação
-![doc](https://user-images.githubusercontent.com/87936806/178175654-4f7df65b-2490-
-4253-ba3a-25471b5eae39.jpg)
-![doc2](https://user-images.githubusercontent.com/87936806/178175689-5d33ffad-2871-
-4a8a-8ed5-75aa6a9db5c7.jpg)
-![doc3](https://user-images.githubusercontent.com/87936806/178175648-b10d5053-8290-
-4aac-8558-2c1dc60e9a64.jpg)
-![doc4](https://user-images.githubusercontent.com/87936806/178175652-4dc7fe7f-9c8f-
-4480-bb8c-d38c5d6bec61.jpg)
-![doc5](https://user-images.githubusercontent.com/87936806/178175762-99301bc3-0234-
-4f6f-855f-7e7e6ca95390.jpg)
+![doc](https://user-images.githubusercontent.com/87936806/178282937-a5b7403c-ca9d-4997-8383-85606ace4ace.jpg)
+
 
 ## Organização dos arquivos
 
