@@ -6,7 +6,7 @@ espectador em específico assistiu, consulta no histórico de um espectador para
 de filmes assistidos e consulta do total de visualizações de um filme.
 Nessa aplicação foram utilizados somente os métodos GET e POST.
 
-A [documentação](https://documenter.getpostman.com/view/21857150/UzJQotY2) da API foi feita e disponibilidade no Postman.  
+A [documentação](https://documenter.getpostman.com/view/21857150/UzJQotY2) da API foi feita e disponibilizada no Postman.  
 A aplicação foi hospedada no Heroku, basta clicar [aqui](https://nodejs-express-movie-api3.herokuapp.com/movies) para ver a lista de filmes cadastrados, por exemplo.  
 O banco de dados foi construído com [SQLite3](https://www.sqlite.org/index.html) e disponibilizado no [DBHub](dbhub.io), para acessar basta clicar
 [aqui](https://dbhub.io/sofiassmorais/apidb.sqlite3).
