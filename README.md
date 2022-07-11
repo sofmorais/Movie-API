@@ -54,6 +54,6 @@ O final da URL é modificado de acordo com a requisição que será feita.
 |  index.js |  Arquivo principal escrito em [NodeJS](https://nodejs.org/en/), usando o framework [Express](https://expressjs.com/pt-br/) e [Knex](http://knexjs.org/) |
 
 
-O Knex é um query builder que possibilita a criação e manipulação de banco de dados mantendo um padrão que permite que a aplicação funcione mesmo se alterar o banco de dados.
+O Knex é um query builder que possibilita a criação e manipulação de banco de dados mantendo um padrão que permite que a aplicação funcione mesmo se alterar o banco de dados.  
 No banco de dados existem três tables: movies, viewer e watched. Na table movies estão armazenados o id e título do filme. Na table viewer estão armazenados o id e nome do espectador. Na table watched estão armazenados as foreign keys: id do espectador e id do filme para definir qual espectador assistiu qual filme.
 
