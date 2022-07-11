@@ -29,13 +29,13 @@ defineMovie = (nick_title) => {
 }
 
 // Função para listar quantos filmes um espectador assistiu
-historyViewer = (nick) => {
+getHistoryViewer = (nick) => {
     const id = knex("viewer").select("id").where({"nick": nick["nick"]});
     return knex("watched").select("*").where({viewer_id: id})
 }
 
 // Função para listar quantos espectadores determinado filme teve
-movieViews = (title) => {
+getMovieViews = (title) => {
     const id = knex("movies").select("id").where({"title": title["title"]});
     return knex("watched").select("*").where({movie_id: id})
 }
@@ -47,6 +47,6 @@ module.exports = {
     createViewer,
     getAllViewers,
     defineMovie,
-    historyViewer,
-    movieViews
+    getHistoryViewer,
+    getMovieViews
 }

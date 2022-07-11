@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const bodyParser = require('body-parser');
 const db = require("./database/script.js");
+const port = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
@@ -38,14 +39,15 @@ app.post("/watched", async (req, res) =>{
 
 // Função usando método POST para listar quantos filmes o espectador selecionado assistiu
 app.post("/history", async(req, res) =>{
-    const history = await db.historyViewer(req.body);
+    const history = await db.getHistoryViewer(req.body);
     res.status(200).send(`The viewer watched: ${JSON.stringify(history.length)} movies`);
 });
 
 // Função com método POST para listar número total de visualizações de um filme
 app.post("/views", async (req, res) =>{
-    const views = await db.movieViews(req.body);
+    const views = await db.getMovieViews(req.body);
     res.status(200).send(`Total viewers: ${JSON.stringify(views.length)}`)
 });
 
-app.listen(3000, () => console.log("server is running in port 3000"));
+app.listen(port, () => 
+    console.log("server is running in port 3000"));
