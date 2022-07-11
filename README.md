@@ -16,10 +16,11 @@ O banco de dados foi construído com [SQLite3](https://www.sqlite.org/index.html
 Para fazer os testes será preciso uma ferramenta de teste, pois a aplicação não conta com código pra execução das requisições nem interface visual, então não é possível realizar todasas requisições. As requisições de GET podem ser visualizadas no [Heroku](https://nodejs-express-movie-api3.herokuapp.com/).  
 Eu utilizei o [Postman](https://www.postman.com/downloads/), uma ferramenta que facilita a criação, teste e documentação de APis, pode ser feito o download ou usar a versão [online](https://web.postman.co/).
 
+- Faça o download do [NodeJS](https://nodejs.org/en/download/);
 - Clone o repositório;
 - Inicie o terminal com o endereço da pasta;
-- Digite "npm run start" ou "node index.js";
-- Abra a [documentação](https://documenter.getpostman.com/view/21857150/UzJQotY2) e selecione "Run in Postman".
+- Digite `npm run start` ou `node index.js`;
+- Abra a [documentação](https://documenter.getpostman.com/view/21857150/UzJQotY2) e selecione `Run in Postman`.
 
 Conforme exemplificado na documentação, para cadastrar um filme ou espectador basta fazer
 uma requisição POST inserindo os dados no body e através de um JSON enviar esses dados.
@@ -45,21 +46,14 @@ O final da URL é modificado de acordo com a requisição que será feita.
 
 ## Organização dos arquivos
 
-#### /database/knexfile.js
-Arquivo para realizar a conexão com o banco de dados com o [Knex](http://knexjs.org/), um
-query builder que possibilita a criação e manipulação de banco de dados mantendo um padrão
-que permite que a aplicação funcione mesmo se alterar o banco de dados.
+| Pasta/arquivo  |  Descrição  |
+| ------------------- | ------------------- |
+|  /database/knexfile.js | Arquivo para realizar a conexão com o banco de dados com o [Knex](http://knexjs.org/) |
+|  /database/script.js |  Arquivo com as funções que serão utilizadas no CRUD |
+|  apidb.sqlite.3 |  Arquivo com o banco de dados [SQLite3](https://www.sqlite.org/index.html) |
+|  index.js |  Arquivo principal escrito em [NodeJS](https://nodejs.org/en/), usando o framework [Express](https://expressjs.com/pt-br/) e [Knex](http://knexjs.org/) |
 
-#### /database/script.js
-Arquivo com as funções que serão utilizadas no CRUD.
 
-#### apidb.sqlite.3
-Arquivo com o banco de dados [SQLite3](https://www.sqlite.org/index.html). No banco de
-dados existem três tables: movies, viewer e watched. Na table movies estão armazenados o id
-e título do filme. Na table viewer estão armazenados o id e nome do espectador. Na table
-watched estão armazenados as foreign keys: id do espectador e id do filme para definir qual
-espectador assistiu qual filme.
+O Knex é um query builder que possibilita a criação e manipulação de banco de dados mantendo um padrão que permite que a aplicação funcione mesmo se alterar o banco de dados.
+No banco de dados existem três tables: movies, viewer e watched. Na table movies estão armazenados o id e título do filme. Na table viewer estão armazenados o id e nome do espectador. Na table watched estão armazenados as foreign keys: id do espectador e id do filme para definir qual espectador assistiu qual filme.
 
-#### index.js
-Arquivo principal da aplicação, escrito em [NodeJS](https://nodejs.org/en/), usando o
-framework [Express](https://expressjs.com/pt-br/) e [Knex](http://knexjs.org/).
