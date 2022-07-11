@@ -23,7 +23,7 @@ criação, teste e documentação de APis, pode ser feito o download ou usar a v
 
 - Clone o repositório;
 - Inicie o terminal com o endereço da pasta;
-- Digite "node index.js";
+- Digite "npm run start" ou "node index.js";
 - Abra a [documentação](https://documenter.getpostman.com/view/21857150/UzJQotY2) e selecione "Run in Postman".
 
 Conforme exemplificado na documentação, para cadastrar um filme ou espectador basta fazer
