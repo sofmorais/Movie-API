@@ -1,3 +1,4 @@
+// Importando a conexação com o banco de dados
 const knex = require("./knexfile");
 
 // Função para cadastrar filme
@@ -40,7 +41,7 @@ getMovieViews = (title) => {
     return knex("watched").select("*").where({movie_id: id})
 }
 
-
+// Exportando propriedades para serem utilizadas no index.js
 module.exports = {
     createMovie,
     getAllMovies,
