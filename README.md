@@ -38,8 +38,8 @@ desejado.
 - `Consultar quantos espectadores um filme tem`: (&#39;/views&#39;, método POST)
 
 ## Documentação
-![doc](https://user-images.githubusercontent.com/87936806/178282937-a5b7403c-ca9d-4997-8383-85606ace4ace.jpg)
 
+![doc0](https://user-images.githubusercontent.com/87936806/178283116-6fcb1887-2432-437f-8aa9-9d41b4a2b774.jpg)
 
 ## Organização dos arquivos
 
